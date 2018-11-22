@@ -2499,3 +2499,18 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
     position: relative;
     font-size: 13px;
 }
+
+li.menu-item-has-children span.sub-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #000;
+  line-height: 52px;
+  background: rgba(150, 100, 0, .75);
+  padding: 0 10px;
+  z-index: 10;
+  height: 46px;
+  width: 52px;
+  text-align: center;
+  font-size: 20px;
+}
