@@ -16,4 +16,8 @@ $(document).ready(function () {
 	    $('.half.prev-link').hide();
 	    $('.half.prev-link').next().css({'text-align' : 'right', 'width' : '100%'});
 	}
+	
+	if ($(".the_solution_section").siblings().size() < 0) { 
+		$(this).css('width', '100%');
+	}
 });
