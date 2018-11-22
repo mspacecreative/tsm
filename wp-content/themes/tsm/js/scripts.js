@@ -17,7 +17,7 @@ $(document).ready(function () {
 	    $('.half.prev-link').next().css({'text-align' : 'right', 'width' : '100%'});
 	}
 	
-	if ($(".the_solution_section").siblings().size() < 0) { 
-		$(this).css('width', '100%');
+	if ($('.the_solution_section').siblings().length() < 0) { 
+		$('.the_solution_section').css('width', '100%');
 	}
 });
