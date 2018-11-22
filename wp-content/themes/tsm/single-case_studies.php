@@ -96,8 +96,8 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					</div>
 					
 					<!-- PAGINATION -->
-					<div class="post-navigation clearfix">
-						<div class="cpt-content-row">
+					<div class="post-navigation">
+						<div class="cpt-content-row clearfix">
 							<div class="half prev-link">
 								<?php previous_post_link('%link', 'Previous Case Study'); ?>
 							</div>
