@@ -2085,7 +2085,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 
 #content-area {
 	position: relative;
-	z-index: 1;
+	z-index: 10;
 }
 
 .single-case_studies #content-area article {
