@@ -2504,13 +2504,13 @@ li.menu-item-has-children span.sub-toggle {
   position: absolute;
   right: 0;
   top: 0;
-  color: #000;
-  line-height: 52px;
-  background: rgba(150, 100, 0, .75);
+  color: #fff;
+  line-height: 43px;
+  background: #83a138;
   padding: 0 10px;
   z-index: 10;
-  height: 46px;
-  width: 52px;
+  height: 43px;
+  width: 43px;
   text-align: center;
   font-size: 20px;
 }
