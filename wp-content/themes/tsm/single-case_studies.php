@@ -104,10 +104,10 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 								<?php $prevthumbnail = get_the_post_thumbnail($prevPost->ID, array(100,100) );?>
 								<?php previous_post_link('%link', "$prevthumbnail  <p>%title</p>", TRUE); ?>
 							</div>
+							<?php } ?>
 							<div class="half next-link">
 								<?php next_post_link('%link', 'Next Case Study'); ?>
 							</div>
-							<?php } ?>
 						</div>
 					</div>
 					<!-- END PAGINATION -->
