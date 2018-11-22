@@ -2,6 +2,7 @@ $(document).ready(function () {
 	$('#sidebar .menu li.menu-item-has-children').prepend('<span class="sub-toggle"><i class="fa fa-angle-down"></i></span>');
 	$('span.sub-toggle').click(function (){
 	  $(this).siblings('.sub-menu').slideToggle();
+	  $(this).siblings('.sub-menu').children().removeClass('et-show-dropdown et-hover');
 	  $(this).children().toggleClass('fa-angle-down fa-angle-up');
 	});
 	
