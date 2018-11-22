@@ -23,12 +23,14 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					<?php if ( get_field( 'taller_header_image' ) ) : ?>
 					<div class="cpt-title" style="padding-top: 40%;">
 						<h1>
+							<span><?php _e('Case Study'); ?></span>
 							<?php the_title(); ?>
 						</h1>
 					</div>
 					<?php else: ?>
 					<div class="cpt-title">
 						<h1>
+							<span><?php _e('Case Study'); ?></span>
 							<?php the_title(); ?>
 						</h1>
 					</div>
