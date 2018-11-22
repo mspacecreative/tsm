@@ -2018,7 +2018,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	position: relative!important;
 }
 
-.cpt-header-area:before, .home #page-container:before, #main-footer:before, .case-studies-feature-img:before {
+.cpt-header-area:before, .hero .et_pb_column:before, #main-footer:before, .case-studies-feature-img:before {
 	content: '';
 	background: url(images/overlays/logo-icon-hero-overlay.png)no-repeat top	 right;
 	position: absolute;
@@ -2026,7 +2026,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	height: 100%;
 	top: 0;
 	right: 0;
-	z-index: 10;
+	z-index: 9;
 	background-size: 40%;
 	opacity: .75;
 }
