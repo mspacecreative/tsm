@@ -4,7 +4,7 @@ $(document).ready(function () {
 		$(this).siblings('ul').slideToggle();
 		$(this).children().toggleClass('fa-angle-down fa-angle-up');
 	});
-	$('span.sub-toggle').on('touchstart touchend', function (e) {
+	$('span.sub-toggle').on('touchstart touchmove', function (e) {
 		e.preventDefault();
 		$(this).siblings('ul').slideToggle();
 		$(this).children().toggleClass('fa-angle-down fa-angle-up');
