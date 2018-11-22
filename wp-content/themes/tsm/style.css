@@ -1622,10 +1622,6 @@ body {
 	max-width: none;
 	padding: 0;
 }
-
-.service-container-wrap-inner {
-	padding: 3.735% 0;
-}
 .service-bucket-container:nth-child(3n) {
 	margin-right: 0;
 }
