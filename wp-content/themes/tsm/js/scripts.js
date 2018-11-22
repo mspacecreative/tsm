@@ -1,7 +1,3 @@
-/*function logoContainerHeight() {
-	$('.logo_container').height($('header').height());
-}*/
-
 $(document).ready(function () {
 	$('#sidebar .menu li.menu-item-has-children > a').click(function(event) {
 		event.preventDefault();

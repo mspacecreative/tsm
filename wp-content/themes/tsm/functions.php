@@ -13,9 +13,6 @@ function et_add_mobile_navigation_mod() {
 /* STYLES AND SCRIPTS */
 function styles_scripts() {
 	
-	wp_enqueue_script( 'slick-script', 'http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array( 'jquery' ), '1.0', true );
-	wp_enqueue_script('slick-script');
-	
 	wp_register_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
 	wp_enqueue_script('scripts');
 	
@@ -24,6 +21,9 @@ function styles_scripts() {
 	
 	wp_enqueue_style( 'slick-style', 'http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), null );
 	wp_enqueue_style('slick-style');
+	
+	wp_enqueue_script( 'slick-script', 'http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array( 'jquery' ), '1.0', true );
+	wp_enqueue_script('slick-script');
 }
  
 function override_divi() {
