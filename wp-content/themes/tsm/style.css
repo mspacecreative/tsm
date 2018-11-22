@@ -2014,7 +2014,11 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	width: 80%;
 }
 
-.cpt-header-area:before, .hero:before, #main-footer:before, .case-studies-feature-img:before {
+#page-container {
+	position: relative!important;
+}
+
+.cpt-header-area:before, .home #page-container:before, #main-footer:before, .case-studies-feature-img:before {
 	content: '';
 	background: url(images/overlays/logo-icon-hero-overlay.png)no-repeat top	 right;
 	position: absolute;
@@ -2025,10 +2029,6 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	z-index: 10;
 	background-size: 40%;
 	opacity: .75;
-}
-
-.hero:before {
-	pointer-events: none;
 }
 
 #main-footer:before {
