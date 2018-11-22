@@ -98,15 +98,15 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					<!-- PAGINATION -->
 					<div class="post-navigation">
 						<div class="cpt-content-row clearfix">
-							<?php $prevPost = get_previous_post(true);
-							if($prevPost) {?>
 							<div class="half prev-link">
-								<?php $prevthumbnail = get_the_post_thumbnail($prevPost->ID, array(100,100) );?>
-								<?php previous_post_link('%link', "$prevthumbnail  <p>%title</p>", TRUE); ?>
+								<?php $prevPost = get_previous_post();
+								$prevThumbnail = get_the_post_thumbnail( $prevPost->ID ); ?>
+								<?php previous_post_link( '%link', $prevThumbnail ); ?>
 							</div>
-							<?php } ?>
 							<div class="half next-link">
-								<?php next_post_link('%link', 'Next Case Study'); ?>
+								<?php $nextPost = get_next_post();
+								$nextThumbnail = get_the_post_thumbnail( $nextPost->ID ); ?>
+								<?php next_post_link( '%link', $nextThumbnail ); ?>
 							</div>
 						</div>
 					</div>
