@@ -4,6 +4,12 @@ $(document).ready(function () {
 		$(this).siblings('ul').slideToggle();
 		$(this).children().toggleClass('fa-angle-down fa-angle-up');
 	});
+	$('span.sub-toggle').on('touchstart', function () {
+		documentClick = true;
+	});
+	$('span.sub-toggle').on('touchmove', function () {
+		documentClick = false;
+	});
 	
 	$('.hero-slider, .solution_carousel').slick({
 	    //autoplay: true,
