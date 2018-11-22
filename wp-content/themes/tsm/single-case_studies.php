@@ -99,14 +99,10 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					<div class="post-navigation">
 						<div class="cpt-content-row clearfix">
 							<div class="half prev-link">
-								<?php $prevPost = get_previous_post();
-								$prevThumbnail = get_the_post_thumbnail( $prevPost->ID ); ?>
-								<?php previous_post_link( '%link', $prevThumbnail ); ?>
+								<?php previous_post_link('%link', 'Previous Case Study'); ?>
 							</div>
 							<div class="half next-link">
-								<?php $nextPost = get_next_post();
-								$nextThumbnail = get_the_post_thumbnail( $nextPost->ID ); ?>
-								<?php next_post_link( '%link', $nextThumbnail ); ?>
+								<?php next_post_link('%link', 'Next Case Study'); ?>
 							</div>
 						</div>
 					</div>
