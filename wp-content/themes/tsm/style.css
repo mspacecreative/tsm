@@ -1605,21 +1605,16 @@ body {
 
 @media only screen and (min-width: 980px) {
 .service-bucket-container {
-	float: left;
-	width: 30.66%;
-	margin-right: 4%;
-	margin-bottom: 4%;
+	display: flex;
+	align-items: center;
 }
-.page-id-1076 .service-bucket-container {
+
+.service-bucket, .service-bg {
 	float: left;
-	width: 25%;
-	margin: 0;
+	width: 50%;
 }
-.service-container-wrap {
-	width: 90%;
-	max-width: 1140px;
-	margin: auto;
-	padding: 54px 0;
+.service-bucket-container:nth-child(even) .service-bucket {
+	order: 2;
 }
 
 .page-id-1076 .service-container-wrap {
@@ -2213,18 +2208,6 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 @media (min-width: 981px) {
 	.the_challenge_section, .the_summary_section, .the_solution_section, .solution_carousel {
 		float: left;
-	}
-	.service-bucket-container {
-		display: flex;
-		align-items: center;
-	}
-	
-	.service-bucket, .service-bg {
-		float: left;
-		width: 50%;
-	}
-	.service-bucket-container:nth-child(even) .service-bucket {
-		order: 2;
 	}
 	.single-case_studies .et_pb_post {
 		margin-bottom: 0;
