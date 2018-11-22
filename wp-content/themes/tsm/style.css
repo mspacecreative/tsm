@@ -2214,6 +2214,18 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	.the_challenge_section, .the_summary_section, .the_solution_section, .solution_carousel {
 		float: left;
 	}
+	.service-bucket-container {
+		display: flex;
+		align-items: center;
+	}
+	
+	.service-bucket, .service-bg {
+		float: left;
+		width: 50%;
+	}
+	.service-bucket-container:nth-child(even) .service-bucket {
+		order: 2;
+	}
 	.single-case_studies .et_pb_post {
 		margin-bottom: 0;
 	}

@@ -36,22 +36,23 @@ get_header();
 			  	<div class="service-container-wrap-inner clearfix">
 			  		<?php if( have_rows('service_bucket') ):
 			  		      	while ( have_rows('service_bucket') ) : the_row(); ?>
-			  		<div class="service-bucket-container">
+			  		<div class="service-bucket-container clearfix">
 			  			<div class="service-bucket" style="background: url('<?php the_sub_field('bucket_background_image'); ?>') no-repeat center center;">
 			  				<div class="colour-overlay" style="background-color: <?php the_sub_field('colour_overlay'); ?>;"></div>
-			  				<div class="service-bg">
-			  					<div class="service-description">
-			  						<h1><?php the_sub_field('bucket_title'); ?></h1>
-			  						<?php if( get_sub_field('bucket_description') ): ?>
-			  							<p><?php the_sub_field('bucket_description'); ?></p>
-			  						<?php endif; ?>
-			  					</div>
+			  			</div>
+			  			
+			  			<div class="service-bg">
+			  				<div class="service-description">
+			  					<h1><?php the_sub_field('bucket_title'); ?></h1>
+			  					<?php if( get_sub_field('bucket_description') ): ?>
+			  						<p><?php the_sub_field('bucket_description'); ?></p>
+			  					<?php endif; ?>
+			  				</div>
+			  				<div class="service-button">
+			  					<a href="<?php the_sub_field('bucket_cta_button'); ?>" class="et_pb_button  et_pb_button_0 et_pb_module et_pb_bg_layout_light">Learn More</a>
 			  				</div>
 			  			</div>
 			  			
-			  			<div class="service-button">
-			  				<a href="<?php the_sub_field('bucket_cta_button'); ?>" class="et_pb_button  et_pb_button_0 et_pb_module et_pb_bg_layout_light">Learn More</a>
-			  			</div>
 			  		</div>
 			  		<?php endwhile; else : endif; ?>
 			  	</div>
