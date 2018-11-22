@@ -6,6 +6,8 @@ $(document).ready(function () {
 	});
 	$('span.sub-toggle').on('touchstart', function (e) {
 		e.preventDefault();
+		$(this).siblings('ul').slideToggle();
+		$(this).children().toggleClass('fa-angle-down fa-angle-up');
 	});
 	
 	$('.hero-slider, .solution_carousel').slick({
