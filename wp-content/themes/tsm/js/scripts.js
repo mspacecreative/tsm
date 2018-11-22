@@ -1,8 +1,8 @@
 $(document).ready(function () {
-	$('#sidebar .menu li.menu-item-has-children > a').on('click touchstart touchend', function (event) {
-		event.preventDefault();
+	$('#sidebar .menu li.menu-item-has-children').prepend('<span class="sub-toggle"><i class="fa fa-angle-down"></i></span>');
+	$('span.sub-toggle').click(function () {
 		$(this).siblings('ul').slideToggle();
-		$(this).parent().toggleClass('rotate');
+		$(this).children().toggleClass('fa-angle-down fa-angle-up');
 	});
 	
 	$('.hero-slider, .solution_carousel').slick({
