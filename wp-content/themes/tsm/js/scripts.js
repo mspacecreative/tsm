@@ -5,8 +5,8 @@ $(document).ready(function () {
 	  $(this).siblings('.sub-menu').slideToggle();
 	  $(this).children().toggleClass('fa-angle-down fa-angle-up');
 	});
-	$('span.sub-toggle').on('touchmove touchend', function (e) {
-	  e.preventDefault();
+	$('span.sub-toggle').on('touchmove touchend', function () {
+	  return false;
 	});
 	
 	$('.hero-slider, .solution_carousel').slick({
