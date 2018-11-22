@@ -4,11 +4,20 @@ $(document).ready(function () {
 		$(this).siblings('ul').slideToggle();
 		$(this).children().toggleClass('fa-angle-down fa-angle-up');
 	});
-	$('span.sub-toggle').on('mouseenter', function (e) {
-		e.preventDefault();
-		$(this).siblings('ul').slideToggle();
-		$(this).children().toggleClass('fa-angle-down fa-angle-up');
+	
+	$('span.sub-toggle').on('touchstart', function() {
+	    documentClick = true;
 	});
+	$('span.sub-toggle').on('touchmove', function() {
+	    documentClick = false;
+	});
+	$('span.sub-toggle').on('click touchend', function(event) {
+	    if (event.type == "click") documentClick = true;
+	    if (documentClick){
+	        $(this).siblings('ul').slideToggle();
+	        $(this).children().toggleClass('fa-angle-down fa-angle-up');
+	    }
+	 });
 	
 	$('.hero-slider, .solution_carousel').slick({
 	    //autoplay: true,
