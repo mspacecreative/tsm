@@ -1,9 +1,3 @@
-$('.hero-slider, .solution_carousel').slick({
-    //autoplay: true,
-	dots: true,
-	adaptiveHeight: true,
-});
-
 /*function logoContainerHeight() {
 	$('.logo_container').height($('header').height());
 }*/
@@ -13,5 +7,11 @@ $(document).ready(function () {
 		event.preventDefault();
 		$(this).siblings('ul').slideToggle();
 		$(this).parent().toggleClass('rotate');
+	});
+	
+	$('.hero-slider, .solution_carousel').slick({
+	    //autoplay: true,
+		dots: true,
+		adaptiveHeight: true,
 	});
 });
