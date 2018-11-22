@@ -2053,6 +2053,10 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	padding: 0;
 }
 
+.slick-dots .slick-active button {
+	background: #fff;
+}
+
 .slick-dots li {
 	display: inline-block;
 	padding: 5px;
