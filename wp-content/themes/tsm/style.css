@@ -2334,14 +2334,14 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	margin-bottom: 15px;
 }
 
-#sidebar .menu li.menu-item-has-children:before {
+/*#sidebar .menu li.menu-item-has-children:before {
 	font-family: fontAwesome;
 	content: '\f0d7';
 	position: absolute;
 	right: 0;
 	line-height: 42px;
 	transition: all 0.4s ease-in-out;
-}
+}*/
 
 #sidebar .menu li.menu-item-has-children.rotate:before {
 	transform: rotate(180deg);
