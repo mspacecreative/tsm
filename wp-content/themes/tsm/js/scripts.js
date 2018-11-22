@@ -1,6 +1,7 @@
 $(document).ready(function () {
 	$('#sidebar .menu li.menu-item-has-children').prepend('<span class="sub-toggle"><i class="fa fa-angle-down"></i></span>');
-	$('span.sub-toggle').on('touchstart click', function () {
+	$('span.sub-toggle').on('touchstart click', function (e) {
+	  e.preventDefault();
 	  $(this).siblings('.sub-menu').slideToggle();
 	  $(this).children().toggleClass('fa-angle-down fa-angle-up');
 	});
