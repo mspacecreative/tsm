@@ -2434,3 +2434,72 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	}
 		
 }
+
+@media (max-width: 767px) {
+
+.post-navigation .half:nth-child(2n) {
+	width: 50%;
+}
+}
+
+@media only screen and (min-width: 768px)
+                   and (max-width: 1080px) {
+
+.post-navigation a {
+	font-size: 15px;
+}
+
+.post-navigation .half {
+	float: left;
+	width: 45%;
+	margin: 0 5% 0 0;
+	min-height: 1px;
+}
+
+.post-navigation .half:nth-child(2n) {
+	margin-top: 0;
+	margin-right: 0;
+	text-align: right;
+}
+}
+
+.half {
+	float: left;
+	width: 45%;
+	margin: 0 5% 0 0;
+	padding-left: 5px;
+}
+.half:nth-child(2n) {
+	margin: 13px 0 0 0;
+	width: 50%;
+	padding-left: 0;
+	padding-right: 5px;
+}
+
+.post-navigation .half:nth-child(2n) {
+    margin-top: 0;
+    margin-right: 0;
+    text-align: right;
+}
+
+.next-link a:after {
+    font-family: fontAwesome;
+    left: 5px;
+    content: '\f101';
+    top: 0;
+    position: relative;
+    font-size: 13px;
+}
+
+.prev-link a:before {
+    font-family: fontAwesome;
+    right: 5px;
+    content: '\f100';
+    top: 0;
+    position: relative;
+    font-size: 13px;
+}
+
+.post-navigation {
+	margin: 25px 0 0;
+}
