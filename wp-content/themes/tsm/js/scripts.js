@@ -10,4 +10,10 @@ $(document).ready(function () {
 		dots: true,
 		adaptiveHeight: true,
 	});
+	
+	// PAGINATION LINKS
+	if ( $.trim( $('.half.prev-link').text() ).length == 0 ) {
+	    $('.half.prev-link').hide();
+	    $('.half.prev-link').next().css({'text-align' : 'right', 'width' : '100%'});
+	}
 });
