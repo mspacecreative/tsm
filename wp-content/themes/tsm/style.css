@@ -2424,7 +2424,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	.case-studies-content {
 	    padding: 80px 5%;
 	}
-	.page .et_pb_row, .single .et_pb_row {
+	.page .et_pb_row, .single .et_pb_row, .et_right_sidebar #sidebar {
 		padding-right: 5%;
 		padding-left: 5%;
 	}
