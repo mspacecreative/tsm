@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('#sidebar .menu li.menu-item-has-children > a').on('click touchmove', function (event) {
+	$('#sidebar .menu li.menu-item-has-children > a').on('click touchstart touchend', function (event) {
 		event.preventDefault();
 		$(this).siblings('ul').slideToggle();
 		$(this).parent().toggleClass('rotate');
