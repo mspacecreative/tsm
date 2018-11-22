@@ -94,6 +94,18 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 							</div>
 						</div>
 					</div>
+					
+					<!-- PAGINATION -->
+					<div class="post-navigation clearfix">
+						<div class="half prev-link">
+							<?php previous_post_link('%link', 'Previous'); ?>
+						</div>
+						<div class="half next-link">
+							<?php next_post_link('%link', 'Next'); ?>
+						</div>
+					</div>
+					<!-- END PAGINATION -->
+					
 				</div>
 			
 			<?php endwhile; ?>
