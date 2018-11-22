@@ -1946,6 +1946,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 .hero-bg-img {
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
 }
 
 .slick-arrow {
@@ -2012,6 +2013,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	margin: auto;
 	position: relative;
 	width: 80%;
+	z-index: 12;
 }
 
 #page-container {
